@@ -15,24 +15,23 @@
         }
         return true;
     }
+
     function displayNumber(N) {
-        let number =+prompt("Nhap so:");
-        let count=0;
-        for (let i=1;i<=number;i++){
-            if(count>=N){
+        let number = +prompt("Nhap so:");
+        let count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (count >= N) {
                 break;
             }
-            if(checkPrime(i)){
+            if (checkPrime(i)) {
                 count++;
-                document.write(i)
+                document.write(i+"<br>")
             }
 
         }
     }
-    displayNumber(50)
 
-
+    displayNumber(20)
 </script>
-
 </body>
 </html>
