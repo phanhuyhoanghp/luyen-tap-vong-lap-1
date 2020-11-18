@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6: Tong 30 so dau tien chia het cho 7</title>
+</head>
+<body>
+<script>
+    function sum()
+    {
+        return (7+7*30)*30/2;
+    }
+
+    function sum_()
+    {
+        let sumof=0;
+        for(i=1;i<=30;i++)
+        {
+            sumof+=7*i;
+        }
+        return sumof;
+    }
+
+    function sum__()
+    {
+        let i=1,sum03=0,count=0;
+        while(count<30)
+        {
+            if(i%7==0)
+            {
+                count+=1;
+                sum03+=i;
+            }
+            i+=1;
+        }
+        return sum03;
+    }
+    console.log(sum__()+'_'+sum_()+'_'+sum());
+</script>
+</body>
+</html>
