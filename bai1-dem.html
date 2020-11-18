@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Bài 1: Đếm</title>
+    <p id="name"></p>
 </head>
 <body>
 <script>
-        let number=+prompt("Nhap so: ")
-        let count=0;
-        for(let i=1;i<number;i++){
-            if (i>99) {
+    let name=document.getElementById('name');
+
+        for(let i=1;i<=100;i++){
+                document.write(i+'<br>');
+                if(i==99)
+                {
+                    document.write('complete!');
                 break;
             }
-            count++;
         }
-        alert(count)
+    // let number=+prompt("Nhap so: ")
+    // let count=0;
+    // for(let i=1;i<number;i++){
+    //     if (i>99) {
+    //         break;
+    //     }
+    //     count++;
+    // }
+    // alert(count)
 </script>
 </body>
 </html>
