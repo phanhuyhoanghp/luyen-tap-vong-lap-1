@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hien thi 20 SNT</title>
+</head>
+<body>
+<!--<input type="text"  id="number">-->
+<!--<button onclick="displayNumber(20)">Submit</button>-->
+<script>
+    function checkPrime(number) {
+        if (number < 2) return false;
+        for (let i = 2; i <= (number - 1); i++) {
+            if (number % i == 0) return false;
+        }
+        return true;
+    }
+    function displayNumber(N) {
+        let number =+prompt("Nhap so:");
+        let count=0;
+        for (let i=1;i<=number;i++){
+            if(count>=N){
+                break;
+            }
+            if(checkPrime(i)){
+                count++;
+                document.write(i)
+            }
+
+        }
+    }
+    displayNumber(50)
+
+
+</script>
+
+</body>
+</html>
